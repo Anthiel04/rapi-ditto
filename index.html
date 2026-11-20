@@ -457,11 +457,49 @@ Nombre: ODD CAR INVESMENTS LLC
 Monto de la Asesoría: 149 USD`, frequent: true
             },
             { id: 3, category: "messages", title: "Pago rápido", body: "https://link.fastpaydirect.com/payment-link/68a8ca7d67ee3b22c6687618", frequent: true },
-            { id: 4, category: "addresses", title: "Dirección / ubicación", body: `Dirección: 1475 Palm Ave, Hialeah, FL 33010
+            {
+                id: 4, category: "addresses", title: "Dirección / ubicación", body: `Dirección: 1475 Palm Ave, Hialeah, FL 33010
 Teléfono: (786) 600-2222
-Horario: Cierra a las 6 p.m.`, frequent: true },
-            { id: 5, category: "prices", title: "Lista de precios", prices: [["Servicio / producto", "Precio"], ["Opción 1", "$0.00"], ["Opción 2", "$0.00"], ["Opción 3", "$0.00"], ["Opción 4", "$0.00"]], frequent: true },
-            { id: 6, category: "messages", title: "Confirmación", body: "¡Perfecto! Hemos recibido tu información. Muchas gracias. Te confirmaremos los detalles a la brevedad.", frequent: false }
+Horario: Cierra a las 6 p.m.`, frequent: true
+            },
+            { id: 5, category: "prices", title: "Lista de precios", prices: [["Servicio / producto", "Precio"], ["Opción 1", "$0.00"], ["Opción 2", "$0.00"], ["Opción 3", "$0.00"], ["Opción 4", "$0.00"]], frequent: false },
+            { id: 6, category: "messages", title: "Confirmación", body: "¡Perfecto! Hemos recibido tu información. Muchas gracias. Te confirmaremos los detalles a la brevedad.", frequent: false },
+            {
+                id: 7, category: "addresses", title: "Confirmación", body: `Motivo de compra
+¿Por qué quiere adquirir un vehículo?
+Finalidad
+¿Para qué necesita el vehículo?
+Tipo de vehículo
+¿Qué tipo de vehículo está buscando?
+Marca o modelo
+¿Tiene alguna preferencia específica?
+Características
+¿Qué características considera importantes?
+Presupuesto
+¿Cuál es el presupuesto o rango de inversión disponible?
+Restricciones
+¿Qué características no acepta o qué condiciones deben cumplirse?
+Información adicional
+Cualquier otro dato relevante para la búsqueda posterior del inventario.`, frequent: false
+            },
+            {
+                id: 7, category: "addresses", title: "Confirmación", body: `Motivo de compra
+¿A qué se dedica/trabaja? 
+
+¿Cuánto tiempo lleva ahí?
+
+!!!Si lleva menos de 2 años: ¿Dónde trabajaba antes? ¿Se dedicaba a lo mismo?
+
+¿Más o menos cuánto está ganando al mes?
+
+¿Actualmente está pagando algún carro?
+
+¿Cuánto tiene pensado dar de inicial (Downpayment)?
+
+¿En cuánto tiene su puntaje de crédito?
+
+`, frequent: false
+            }
         ];
         const labels = { prices: "Precios", messages: "Mensaje", addresses: "Dirección", questions: "Datos del cliente" };
         let section = "frequent"; const cards = document.getElementById("cards"), search = document.getElementById("search");
